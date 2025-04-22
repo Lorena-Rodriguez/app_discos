@@ -1,0 +1,58 @@
+Ejercicio 3_js. Librería de discos con HTML, CSS, JS y Bootstrap 5. 
+Crea una aplicación web interactiva para gestionar una colección 
+personal de discos musicales, 
+implementando funcionalidades CRUD (Crear, Leer, Actualizar, Eliminar)
+usando tecnologías web fundamentales.​
+
+​
+
+Requisitos Técnicos:​
+
+​
+
+Estructura HTML:​
+
+*Título principal <h2> con el texto: "Mi librería de discos".​
+
+*Formulario con los siguientes campos:​
+
+*Nombre del disco (texto, obligatorio).​
+
+**Año de lanzamiento (número, obligatorio).​
+
+Descripción (textarea, obligatorio).​
+
+*URL de la carátula (input tipo URL, obligatorio).​
+🔹 Consejo: Usa imágenes libres de derechos (ej: Unsplash o Pixabay). Si no encuentras la portada exacta, usa una imagen representativa (ej: instrumentos, micrófonos, etc.).​
+
+​
+
+*Botón de envío con el texto: "Agregar disco" (estilizado con Bootstrap 5).​
+
+*Sección <h3> titulada "Mis discos", seguida de una lista donde se mostrarán los discos añadidos.​
+
+​
+
+2.   Funcionalidades JavaScript:​
+
+*Agregar discos: Al enviar el formulario, se debe crear un nuevo objeto disco y mostrarlo en la lista.​
+
+*Editar discos: Cada disco en la lista debe tener un botón "Editar" que cargue sus datos en el formulario (cambiando el botón a "Actualizar disco").​
+
+*Eliminar discos: Botón "Eliminar" que remueva el disco de la lista.​
+
+*Validación básica: Todos los campos del formulario deben ser obligatorios.​
+
+​
+
+3.   Estilos CSS:​
+
+*Usa Bootstrap 5 para el diseño responsive (formulario, botones, tarjetas de discos).​
+
+*Personaliza aspectos visuales como:​
+
+*Tamaño fijo para las imágenes de carátula (50px × 50px).​
+
+*Diseño claro y organizado para la lista de discos (ej: usar flexbox).​
+
+​

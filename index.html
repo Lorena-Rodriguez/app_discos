@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+    <!-- Configuración básica -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Librería de Discos</title>
+    <!-- enlace a googlefonts y icons -->
+    <link rel="icon" href="https://icons.getbootstrap.com/assets/icons/disc.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Importación de Bootstrap Por CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<!-- Contenedor principal -->
+    <main class="container-xxl">
+
+    <header class="container-xxl my-5">
+        <div class="row text-center">
+            <!-- Primer espacio: Icono 1 -->
+            <div class="col-12 col-md-4">
+                <i class="bi bi-disc my-3" style="font-size: 3rem;"></i>
+                <p class="mt-2">Explora tu música</p>
+            </div>
+            <!-- Segundo espacio: Icono 2 -->
+            <div class="col-12 col-md-4">
+                <i class="bi bi-search my-3" style="font-size: 3rem;"></i>
+                <p class="mt-2">Encuentra lo mejor</p>
+            </div>
+            <!-- Tercer espacio: Icono 3 -->
+            <div class="col-12 col-md-4">
+                <i class="bi bi-person my-3" style="font-size: 3rem;"></i>
+                <p class="mt-2">Tu librería personal</p>
+            </div>
+        </div>
+    </header>
+    <!-- accesibilidad para personas que usan lectores de pantalla usando aria-label -->
+    <section aria-labelledby="mytext" class="row justify-content-center mt-3">
+        
+    <h2 class="text-center mb-4" id="mytext">Mi librería de discos</h2>
+
+    <!-- Formulario para agregar/editar discos -->
+
+    <!-- párrafo para lectores de pantalla, en la app está oculto, se usará en el form después -->
+     <p id="form-info" class="visually-hidden">Completa el siguiente formulario para agregar un disco a tu colección.</p>
+
+     <!-- uso de aria-describedby para lectores de pantalla y que lean el párrafo anterior  -->
+    <form aria-describedby="form-info" class="col-12 col-md-8 col-lg-6" id="formulario">
+        
+        <div class="mb-3">
+            <label for="nameDisc" class="form-label">Nombre del disco</label>
+            <input type="text" class="form-control" id="nameDisc" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="yearDisc" class="form-label">Año de lanzamiento</label>
+            <input type="number" class="form-control" id="yearDisc" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="descriptionDisc" class="form-label">Descripción</label>
+            <textarea class="form-control" id="descriptionDisc" rows="3" required></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label for="imageUrl" class="form-label">Imagen de la carátula</label>
+            <input type="url" class="form-control" id="imageUrl" placeholder="URL" required>
+        </div>
+
+            <button type="submit"  id="submitBtn" class="btn btn-primary w-100">Agregar disco</button>
+
+    </form>
+
+    </section>
+
+    <!-- Lista donde se mostrarán los discos -->
+    <!-- Los discos se agregarán aquí dinámicamente con JavaScript -->
+
+    <section id="discsList" class="mt-5">
+        <h3 class="text-center secondary-title">Mis discos</h3>
+        <div id="discContainer" ></div>
+    </section>
+        <!-- fin del Contenedor principal -->
+    
+    </main>
+
+    <!-- Scripts de Bootstrap y nuestro código -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

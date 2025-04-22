@@ -1,0 +1,192 @@
+* {
+  /* inicio reset básico */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+  /* fin reset básico */
+}
+
+/* los iconoes se comportarán en bloque */
+.bi {
+  display: inline-block; 
+}
+
+/* efecto hover para los iconos */
+  .bi:hover {
+    color: #F89CA6; /* Cambia el color del icono cuando se pasa el cursor */
+    transform: scale(1.2); /* Aumenta el tamaño del icono en un 20% */
+    transition: all 0.3s ease; /* Hace que el cambio de color y tamaño sea suave */
+  }
+
+  .row p:hover {
+    color: #F89CA6; /* Cambia el color del icono cuando se pasa el cursor */
+    transform: scale(1.2); /* Aumenta el tamaño del icono en un 20% */
+    transition: all 0.3s ease;
+  }
+
+/*estilos para el botón del formulario*/
+.btn-primary {
+    background-color: #F89CA6;
+    color: black;
+    border: none;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .btn-primary:hover {
+    background-color: #d66a77; /* Un tono más oscuro cuando pasa el ratón */
+    color: black; 
+  }
+
+/*estilos para el contenedor de la card*/
+  #discContainer {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+/*estilos para la card*/
+  .card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 8px; 
+    width: 20rem;
+    min-height: 18rem;
+    overflow: hidden;
+  }
+
+/*estilos para el texto de la card*/
+  .card p.descripcion {
+    flex-grow: 1; 
+    overflow-y: auto; 
+    max-height: 120px; 
+    width: 100%;
+  }
+
+/*estilos para el año de la card*/
+  .card p.anio {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+/*estilos para la imagen de la card*/
+  .card img {
+    width: 50px; 
+    height: 50px;
+    object-fit: cover; 
+    margin-bottom: 10px; 
+  }
+
+/*estilos para título y texto de la card*/
+  .card h5, .card p {
+    margin: 5px 0; 
+  }
+
+/*estilos para el textarea del formulario*/
+  textarea {
+    resize: none; /* Desactiva el redimensionamiento manual */
+    overflow-y: auto; /* Muestra scroll vertical si hay mucho contenido */
+    height: 100px; /* Altura fija, puedes ajustarla a tu gusto */
+    width: 100%;
+  }
+
+/*estilos para ubicar los botones de la card*/
+  .card-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+/*estilos para los botones de la card*/
+  .edit-btn, .delete-btn {
+    width: 5rem;
+    height: 2rem;
+    background-color: #F89CA6;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-style: none;
+  }
+
+  /*efecto hover para los botones*/
+  .delete-btn:hover {
+    background-color: #d66a77; 
+    color: black;
+  }
+
+  .edit-btn:hover {
+    background-color: #d66a77; 
+    color: black;
+  }
+
+/*estilos para el título principal*/
+  #mytext {
+    font-family: "Righteous", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 50px;
+    color: #000;
+    text-align: center;
+  }
+
+/*estilos para el título secundario "Mis discos"*/
+  .secondary-title {
+    font-size: 30px;
+  }
+
+/*Diseño inclusivo: al hacer tab se iluminan los campos con estilo personalizado*/
+  input:focus,
+  textarea:focus,
+  button:focus {
+    outline: 2px solid #F89CA6; 
+    box-shadow: 0 0 5px #F89CA6;
+  }
+  
+  .btn-primary:focus {
+    background-color: #F89CA6 !important;
+    color: black;
+    box-shadow: 0 0 0 0.25rem rgba(248, 156, 166, 0.5) !important;
+    outline: none;
+  }
+  .form-control:focus {
+    border-color: #F89CA6 !important;
+    box-shadow: 0 0 0 0.2rem rgba(248, 156, 166, 0.25) !important;
+  }
+
+  .btn:focus {
+    box-shadow: 0 0 0 0.25rem rgba(248, 156, 166, 0.5) !important;
+  }
+  
+/*estilos para la card al pasar el ratón por encima*/
+  .card:hover,
+.card:focus {
+    transform: scale(1.03);
+    box-shadow: 0 4px 15px rgba(248, 156, 166, 0.5);
+    transition: all 0.3s ease;
+}
+
+/*Diseño inclusivo en medidas menores de 768px de pantalla*/
+  @media (max-width: 768px) {
+    input:focus, textarea:focus, button:focus {
+      outline: 2px dashed #F89CA6;
+      box-shadow: none;
+    }
+  }
+  
+  button:focus-visible {
+    outline: 2px solid #F89CA6;
+  }
