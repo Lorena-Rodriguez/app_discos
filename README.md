@@ -31,12 +31,12 @@ Consiste en una aplicación web interactiva que muestra una colección de discos
 
 3. ¡Listo! Ya puedes interactuar con la app.
 
-✨ Funcionalidades:
-Mostrar una lista de discos.
+## ✨ Funcionalidades
 
-Ver detalles dinámicamente al hacer clic.
+- Mostrar una lista de discos.
+- Ver detalles dinámicamente al hacer clic.
+- Estilos visuales con CSS.
 
-Estilos visuales con CSS.
 
 📁 Estructura de archivos
 pgsql
