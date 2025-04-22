@@ -40,10 +40,7 @@ Consiste en una aplicación web interactiva que muestra una colección de discos
 
 📁 Estructura de archivos
 
-📦 app-discos
-├── index.html
-├── style.css
-└── script.js
+📦 app-discos ├── index.html ├── style.css └── script.js
 
 🙋‍♀️ Autora
 Lorena Rodríguez
