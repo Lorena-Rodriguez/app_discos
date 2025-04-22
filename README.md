@@ -39,13 +39,12 @@ Consiste en una aplicación web interactiva que muestra una colección de discos
 
 
 📁 Estructura de archivos
-pgsql
-Copiar
-Editar
+
 📦 app-discos
 ├── index.html
 ├── style.css
 └── script.js
+
 🙋‍♀️ Autora
 Lorena Rodríguez
 GitHub: @Lorena-Rodriguez
